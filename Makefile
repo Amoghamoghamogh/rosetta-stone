@@ -13,3 +13,7 @@ arm:
 aarch64:
 	aarch64-linux-gnu-gcc -o aarch64 rosetta.c -static
 	aarch64-linux-gnu-objdump -d -Mintel ./aarch64 > aarch64-dump
+
+x86_64:
+   	x86_64-linux-gnu-gcc -o x86_64 rosetta.c -static
+	x86_64-linux-gnu-objdump -d -Mintel ./x86_64 > x86_64-dump
